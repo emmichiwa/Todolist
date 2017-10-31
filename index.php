@@ -22,10 +22,22 @@
         </ul>
 
         <form class="add-item" action="add.php" method="GET">
-            <input type="text"  name="name" placeholder="Add you task here" class="input" autocomplete="off" required>
+            <input type="text"  name="task" placeholder="Add you task here" class="input" autocomplete="off" required>
             <input type="text"  name="name" placeholder="Created By" class="input" autocomplete="off" required>
             <input type="submit" value="Add task" class="submit">
         </form>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Created By</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
 
     </div>    
 </body>
