@@ -1,16 +1,16 @@
 body{
-    background-image: url("pics/star.jpg");
+    background-image: url("pics/starry.jpg");
     background-repeat: none; 
     font-family: 'Sriracha', cursive; 
-    color: white;
+    color: black;
 }
 
-.list{
+.todolist{
     background-color: plum; 
     margin: 20px auto; 
     width: 350px; 
     padding:10px; 
-    color: white; 
+    color: black; 
 }
 
 .input{
