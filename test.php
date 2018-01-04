@@ -22,11 +22,8 @@ require 'todolist.php';
         <h1 class="header">EMMICHIWA TODO LIST</h1>
 
         <form class="add-item" action="index.php" method="POST">
-        <?php if (isset($error)) { ?>
-            <p><?php echo $error; ?></p>
-        <?php } ?>
-            <input type="text"  name="title" placeholder="Add you task here" class="input" autocomplete="off" >
-            <input type="text"  name="name" placeholder="Created By" class="input" autocomplete="off" >
+            <input type="text"  name="title" placeholder="Add you task here" class="input" autocomplete="off" required>
+            <input type="text"  name="name" placeholder="Created By" class="input" autocomplete="off" required>
             <button type="submit" name="submit" class="add_button">Add task</button>
         </form>
 
