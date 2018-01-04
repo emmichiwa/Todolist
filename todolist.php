@@ -2,16 +2,14 @@
 $add_task = "";
 if (isset($_POST['submit'])) {
     $title = $_POST['title'];
-    if(!empty($title)) {
-        $add_task = "Your task has been succesfully added."; 
     }if(empty($title)) {
         $add_task = "You must fill in the task.";
     } else { 
-    $statement = $pdo->prepare("INSERT INTO todo (title) VALUES ('$title')");
+    $statement = $pdo->prepare("INSERT INTO todo (task) VALUES ('$task')");
     $statement ->execute();
-    //header('location: index.php');
+    header('location: index.php');
 }
-}
+
 $tasks = $pdo->prepare("SELECT * FROM todo WHERE completed = 0 ORDER BY title DESC");
 $tasks ->execute();
 $todolist = $tasks -> fetchALL(PDO::FETCH_ASSOC);
