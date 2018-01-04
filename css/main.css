@@ -1,16 +1,22 @@
 body{
     background-image: url("pics/star.jpg");
     background-repeat: none; 
-    font-family: 'Sriracha', cursive;   
+    font-family: 'Sriracha', cursive; 
+    color: white;
 }
 
 .list{
     background-color: plum; 
     margin: 20px auto; 
     width: 350px; 
-    padding: 10px; 
+    padding:10px; 
+    color: white; 
 }
 
 .input{
     margin: 0px auto;       
+}
+
+thead{
+    margin: 30px; 
 }
