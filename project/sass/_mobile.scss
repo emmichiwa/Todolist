@@ -1,12 +1,17 @@
 body{
     background-image: url("pics/starry.jpg");
     background-repeat: none; 
-    font-family: 'Sriracha', cursive; 
+    font-family: 'Oswald', sans-serif;
     color: black;
 }
 
+.todoWrapper{
+    margin: 0px auto; 
+}
+
+
 .todolist{
-    background-color: plum; 
+    background-color: white; 
     margin: 20px auto; 
     width: 350px; 
     padding:10px; 
@@ -18,5 +23,5 @@ body{
 }
 
 thead{
-    margin: 30px; 
+    margin-right: 30px; 
 }
