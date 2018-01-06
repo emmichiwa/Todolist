@@ -4,14 +4,13 @@ if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $createdBy = $_POST['name'];
     if(empty($title)) {
-        $message = "Please fill in Task!";
+        $message = "Please fill in a Task!";
     }elseif(empty($createdBy)) {
         $message = "Please fill in Created by!";
     } else { 
-    $message = "Thank you you have now filled in a task!";
+    echo $message = "Thank you your task has now been added!"; 
     $statement = $pdo->prepare("INSERT INTO todo (title, createdBy) VALUES ('$title', '$createdBy')");
     $statement ->execute();
-    header('location: index.php');
     }
 } //TOTALY DONE -> FOR THE TASKS!!
 
