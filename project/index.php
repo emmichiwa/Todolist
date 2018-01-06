@@ -24,14 +24,8 @@ require 'todolist.php';
             <h2>TODO LIST</h2>
 
             <form class="add-item" action="index.php" method="POST">
-                <?php if (isset($title)) { ?>
-                    <p><?php echo $added; ?></p>
-                <?php } ?>
-
-                <?php if (isset($error)) { ?>
-                    <p><?php echo $error; ?></p>
-                <?php } ?>
-                <input type="text"  name="title" placeholder="Add you task here" class="input" autocomplete="off" >
+            <p class="message"><?php echo $message; ?></p>
+                <input type="text"  name="title" placeholder="Add your task here" class="input" autocomplete="off" >
                 <input type="text"  name="name" placeholder="Created By" class="input" autocomplete="off" >
                 <button type="submit" name="submit" class="add_button">Add task</button>
             </form>
