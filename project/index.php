@@ -9,13 +9,12 @@ require 'todolist.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/67b80e2b65.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Just+Another+Hand|Rancho|Sriracha" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 
     <title>Todo List</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Just+Another+Hand|Rancho|Sriracha" rel="stylesheet">
-    
-    <link rel="stylesheet" href="main.css">
-    
 </head>
 <body>
     <div class="todowrapper">
@@ -36,7 +35,7 @@ require 'todolist.php';
                         <tr>
                             <th>All tasks listed</th>
                             <th>Created By</th>
-                            <th>Action</th>
+                            <th class="thAction">Action</th>
                         </tr>
                     </thead>
 
@@ -46,11 +45,11 @@ require 'todolist.php';
                         <tr>
                         <td class="task"><p><?= $todo['title']; ?></p></td>
                         <td class="task"><p><?= $todo['createdBy']; ?></p></td>
-                            <td>
-                                <a href="index.php?mark_complete=<?php echo $todo['id']; ?>">Done</a>
+                            <td class="action">
+                                <a href="index.php?mark_complete=<?php echo $todo['id']; ?>"><i class="fa fa-check" aria-hidden="true"></i></a>
                             </td>
-                            <td class="delete">
-                                <a href="index.php?delete_task=<?php echo $todo['id']; ?>">Delete</a>
+                            <td class="action">
+                                <a href="index.php?delete_task=<?php echo $todo['id']; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                             </td>
                         </tr>
                         <?php } ?>
@@ -79,7 +78,7 @@ require 'todolist.php';
                         <td class="task"><p><?= $complete['title']; ?></p></td>
                         <td class="task"><p><?= $complete['createdBy']; ?></p></td>
                         <td class="delete">
-                            <a href="index.php?delete_task=<?php echo $complete['id']; ?>">Delete</a>
+                            <a href="index.php?delete_task=<?php echo $complete['id']; ?>"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                         </td>
                     </tr>
                     <?php } ?>
