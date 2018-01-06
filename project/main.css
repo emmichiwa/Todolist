@@ -1,0 +1,57 @@
+body{
+    background-image:url("pics/paint_2.jpg");
+    font-family:'Oswald', sans-serif;
+    color:black;
+}
+
+a{
+    color: #D7467A; 
+}
+
+form{
+    margin-bottom: 10px; 
+}
+
+.input{
+    margin: 2px;
+}
+    
+.todolist{
+    background-color:white;
+    margin: 20px auto;
+    max-width: 350px;
+    padding: 15px;
+    color:black;
+}
+
+.doneTasks{
+    background-color:white;
+    margin: 20px auto;
+    max-width: 350px;
+    padding: 15px;
+    color:black;
+}
+
+th{
+    text-align: left; 
+    padding-right: 25px; 
+}
+
+.thaction{
+    width: 10%; 
+}
+
+.action{
+    display: inline-flex; 
+    margin-right: 10px; 
+    margin-top: 15px; 
+}
+
+.delete{
+    width: 10%; 
+}
+
+.error{
+    font-style: oblique; 
+    color: #4CBEDE; 
+}
