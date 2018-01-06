@@ -7,10 +7,8 @@ if (isset($_POST['submit'])) {
         $message = "Please fill in Task!";
     }elseif(empty($createdBy)) {
         $message = "Please fill in Created by!";
-    }elseif(!empty($title)) {
-        $message = "Thank you $createdBy you have now filled in a task!";
     } else { 
-    $message = "Your task has been succesfully added.";
+    $message = "Thank you you have now filled in a task!";
     $statement = $pdo->prepare("INSERT INTO todo (title, createdBy) VALUES ('$title', '$createdBy')");
     $statement ->execute();
     header('location: index.php');
@@ -37,4 +35,6 @@ $completed = $pdo->prepare("SELECT * FROM todo WHERE completed = 1 ORDER BY comp
 $completed ->execute();
 $completedlist = $completed -> fetchALL(PDO::FETCH_ASSOC);
 
- 
+// elseif(!empty($title)) {
+//     $message = "Thank you $createdBy you have now filled in a task!";
+// }

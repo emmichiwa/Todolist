@@ -1,5 +1,5 @@
 body{
-    background-image:url("pics/paint_2.jpg");
+    background-image:url("pics/leaf.jpg");
     font-family:'Oswald', sans-serif;
     color:black;
 }
@@ -14,12 +14,19 @@ form{
 
 .input{
     margin: 2px;
+    width: 35%;  
+    border: 1px solid #B4B2B6; 
+}
+
+button{
+    border: 1px solid #D0CDCE;
+    background: #D0CDCE;
 }
     
 .todolist{
     background-color:white;
     margin: 20px auto;
-    max-width: 350px;
+    max-width: 300px;
     padding: 15px;
     color:black;
 }
@@ -27,7 +34,7 @@ form{
 .doneTasks{
     background-color:white;
     margin: 20px auto;
-    max-width: 350px;
+    max-width: 300px;
     padding: 15px;
     color:black;
 }
@@ -35,6 +42,11 @@ form{
 th{
     text-align: left; 
     padding-right: 25px; 
+    font-size: 0.8rem; 
+}
+
+.task{
+    font-size: 0.8rem; 
 }
 
 .thaction{
@@ -53,5 +65,28 @@ th{
 
 .message{
     font-style: oblique; 
-    color: #4CBEDE; 
+    text-align: center; 
+    color: white; 
+    background-color: #4CBEDE; 
+}
+
+@media screen and (min-width: 800px) { 
+
+    body{
+       text-align: center; 
+    }
+
+    .todowrapper{
+        display: inline-flex; 
+        text-align: left; 
+    }
+
+    .todolist{
+        margin: 20px;
+    }
+
+    .doneTasks{
+        margin: 20px;
+    }
+
 }
