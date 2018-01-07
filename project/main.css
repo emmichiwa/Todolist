@@ -2,6 +2,8 @@ body{
     background-image:url("pics/leaf.jpg");
     font-family:'Oswald', sans-serif;
     color:black;
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin: 0px; 
     padding: 0px; 
 }
@@ -17,7 +19,7 @@ footer{
 }
 
 .fa-github{
-    color: black; 
+    color: #24292E; 
     font-size: 2rem; 
 }
 
@@ -100,6 +102,7 @@ th{
     }
 
     .todowrapper{
+        margin-top: 50px; 
         display: inline-flex; 
         text-align: left; 
     }

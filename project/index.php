@@ -92,7 +92,7 @@ require 'todolist.php';
         <footer>
 
             <div class="socialicons">
-            <h2><a href=#><i class="fa fa-github" aria-hidden="true"></i> EMMICHIWA</a></h2>
+            <h2><a href="https://github.com/emmichiwa"><i class="fa fa-github" aria-hidden="true"></i> EMMICHIWA</a></h2>
             </div>
 
             <div class="clear"></div>
